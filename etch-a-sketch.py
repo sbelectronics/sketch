@@ -51,7 +51,7 @@ def main():
     
     encoder = EncoderThread(encoders
                             =[{"pin_a": PIN_ENC_A, "pin_b": PIN_ENC_B, "min_pos": 0, "max_pos": epd.height-1},
-                              {"pin_a": PIN_ENC_A2, "pin_b": PIN_ENC_B2, "min_pos": 0, "max_pos": epd.width-1}],
+                              {"pin_a": PIN_ENC_A2, "pin_b": PIN_ENC_B2, "min_pos": 0, "max_pos": epd.width-1, "invert": True}],
                             store_points = True)
     encoder.start()
 
